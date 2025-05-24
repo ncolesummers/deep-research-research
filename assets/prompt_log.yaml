@@ -1,0 +1,24 @@
+# 🔖 Prompt Log Template
+# Store raw prompt / response pairs for reproducibility and audits.
+# Duplicate the sample block below for each experiment run.
+
+- id: 001                # Unique numeric or UUID identifier
+  phase: 1A              # e.g., 1A (Software Eng deep-dive)
+  discipline: software-eng
+  date: 2025-05-25       # ISO date of run
+  pattern: Role-Primed   # Prompting pattern used
+  model: gpt-4o-mini     # Model/version
+  prompt: |
+    Act as a Senior DevOps Architect...
+    (full prompt text here)
+  response: |
+    The CI/CD pipeline should include...
+    (full response text here)
+  metrics:
+    depth_score: 4       # Self‑rated 1‑5 vs rubric
+    citation_integrity: 5
+  notes: >
+    Observed that specifying rollback strategy
+    increased depth by ~20 %. No hallucinated refs.
+
+# --- Duplicate below this line for next run ------------------------------
